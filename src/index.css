@@ -1,0 +1,706 @@
+:root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div#root {
+  display: flex;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+header {
+  width: 25%;
+  height: 100vh;
+  background-color: rgb(57, 169, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.containerHeader {
+  width: 80%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.logoAndName {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 60%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(128,128,128,1) 0%, rgba(189,255,149,1) 100%);
+}
+
+.containerName {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  height: 100%;
+  font-size: 80%;
+}
+
+hr {
+  width: 65%;
+  height: 6px;
+  background: white;
+  border: none;
+}
+
+.containerLogoandNets {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 80%;
+  height: 50%;
+} 
+
+.imgSena {
+  width: 50%;
+  height: 60%;
+  background: white;
+  border-radius: 50%;
+}
+
+.iconsNets {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+svg {
+  width: 50%;
+  height: 50%;
+  color: #FFFF;
+}
+
+main {
+  background: white;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0 40px 25%;
+  gap: 20px;
+}   
+
+section.firstSection {
+  width: 100%;
+}
+
+section {
+  width: 25%;
+}
+
+section > img {
+  width: 140px;
+  height: 140px;
+  box-shadow: 0 0 0 2px rgb(243, 8, 8);
+  border-radius: 50%;
+}
+
+section.logoAndName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.FirstSectionDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 0 0;
+  gap: 10px;
+  color: black;
+}
+
+.FirstSectionText {
+  color: black;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+p.textOne {
+  font-size: 18px;
+}
+
+p.textSecond {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.textThreeAndTextFour {
+  font-size: 18px;
+}
+
+p.textFour {
+  color: rgb(57, 169, 0);
+}
+
+section.secondSection {
+  width: 100%;
+}
+
+.SecondSectionDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 0 0;
+  gap: 10px;
+  color: black;
+}
+
+.TextSecondSection {
+  color: #000;
+  width: 85%;
+  display: flex;
+  gap: 40px 3%;
+  flex-wrap: wrap;
+}
+
+section.threeSection {
+  width: 100%;
+}
+
+.ThreeSectionDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 0 0;
+  gap: 10px;
+  color: black;
+}
+
+.TextThreeSection {
+  color: black;
+  width: 85%;
+  display: flex;
+  gap: 52px 2.5%;
+  flex-wrap: wrap;
+}
+
+section.fourSection {
+  width: 100%;
+}
+
+.FourSectionDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 0 0;
+  gap: 10px;
+  color: black;
+}
+
+.TextFourSection {
+  color: black;
+  width: 85%;
+  display: flex;
+  gap: 52px 11.3%;
+  flex-wrap: wrap;
+}
+
+.whatsapp {
+  position:fixed;
+  width:100px;
+  height:100px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:60px;
+  z-index:100;
+}
+
+.whatsapp-icon {
+  margin-top:13px;
+}
+
+.containerXp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.imgXp {
+  height: 200px;
+  width: 200px;
+}
+
+.progressText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+progress  {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+p.textXp {
+  font-size: 30px;
+}
+
+@media (max-width:1279px) {
+
+  .logo {
+    width: 60%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.containerName {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+    font-size: 57%;
+}  
+  
+  .containerLogoandNets {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 80%;
+    height: 50%;
+  }
+
+  .imgSena {
+      width: 60%;
+      height: 60%;
+      background: white;
+      border-radius: 50%;
+  }
+
+  svg {
+      width: 50%;
+      height: 50%;
+      color: gray;
+  }
+
+  .TextSecondSection {
+    color: #000;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    gap: 40px 3%;
+    flex-wrap: wrap;
+  }
+
+  .TextThreeSection {
+      color: black;
+      width: 85%;
+      display: flex;
+      gap: 52px 3%;
+      flex-wrap: wrap;
+  }
+
+  .TextFourSection {
+    color: black;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    gap: 52px 11.3%;
+    flex-wrap: wrap;
+  }
+
+  .imgXp {
+    height: 180px;
+    width: 180px;
+  }
+
+  progress {
+      height: 50px;
+  }
+
+  p.textXp {
+      font-size: 25px;
+      font-weight: 800;
+  }
+
+  .whatsapp {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 40px;
+    right: 15px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 50px;
+    z-index: 100;
+  }
+
+}
+
+@media (max-width: 920px) {
+  
+  .logo {
+    width: 85%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: gray;
+  }
+
+  .containerName {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      font-size: 65%;
+  }
+
+  .containerLogoandNets {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      width: 80%;
+  }
+
+  .imgSena {
+      width: 70%;
+      height: 70%;
+      background: white;
+      border-radius: 50%;
+  }
+
+  svg {
+      width: 40%;
+      height: 40%;
+      color: gray;
+  }
+
+  .TextThreeSection {
+    color: black;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    gap: 30px 1%;
+    flex-wrap: wrap;
+  }
+
+  .imgXp {
+    height: 150px;
+    width: 150px;
+  }
+
+  .whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 15px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 30%;
+    height: 100vh;
+    background-color: rgb(57, 169, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    text-align: center;
+  }
+
+  .containerHeader {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: gray;
+  }
+
+  .containerName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 55%;
+  }
+
+  .containerLogoandNets {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 85%;
+  }
+
+  .imgSena {
+      width: 70%;
+      height: 70%;
+      background: white;
+      border-radius: 50%;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    color: gray;
+  }
+
+  main {
+    background: white;
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0 40px 30%;
+    gap: 20px;
+  }
+
+  p.textOne {
+    font-size: 16px;
+  }
+
+  p.textSecond {
+      font-size: 16px;
+      font-weight: 700;
+  }
+
+  .textThreeAndTextFour {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  div#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+      width: 100%;
+      height: 25%;
+      background-color: rgb(57, 169, 0);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      position: fixed;
+      text-align: center;
+  }
+
+  .containerHeader {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+  }
+
+  .logoAndName {
+      width: 50%;
+      height: 97%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .logo {
+      width: 55%;
+      height: 58%;
+      border-radius: 50%;
+      background-color: gray;
+  }
+
+  .containerName {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      font-size: 7px;
+  }
+
+  .hrHeader {
+      width: 65%;
+      height: 6px;
+      background: white;
+      border: none;
+      display: none;
+  }
+  
+  .containerLogoandNets {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+
+  .imgSena {
+      width: 50%;
+      height: 55%;
+      background: white;
+      border-radius: 50%;
+  }
+
+  .iconsNets {
+      width: 100%;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background: none;
+  }
+
+  svg {
+      width: 16px;
+      height: 16px;
+      color: white;
+  }
+
+  main {
+    background: white;
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 42% 0 40px 0;
+    gap: 20px;
+}
+  .TextFourSection {
+    color: black;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    gap: 51px 19%;
+    flex-wrap: wrap;
+  }
+
+  .imgXp{
+    height: 120px;
+    width: 120px;
+  }
+
+  progress {
+      height: 30px;
+      width: 100px;
+  }
+
+  p.textXp {
+      font-size: 20px;
+      font-weight: 800;
+  }
+} 

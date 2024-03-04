@@ -1,0 +1,146 @@
+.containerFather {
+    background: rgb(57, 169, 0);
+    width: 380px;
+    height: 250px;
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+
+img.imgProyect {
+    width: 45%;
+    height: 100%;
+}
+
+.TextProyect {
+    color: white;
+    margin: 20px 0 20px 0;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2.titleProyect {
+    height: 15%;
+    font-size: 24px;
+    margin: 0 0px 15px 0;
+}
+
+p.descProyect {
+    height: 55%;
+    font-size: 16px;
+    text-align: center;
+}
+
+a.linkProyect {
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+@media (max-width: 1279px) {
+    
+    .containerFather {
+        background: rgb(57, 169, 0);
+        width: 100%;
+        height: 250px;
+        display: flex;
+        gap: 20px;
+        border-radius: 10px;
+    }
+    
+    img.imgProyect {
+        width: 40%;
+        height: 100%;
+    }
+    
+    .TextProyect {
+        color: white;
+        margin: 20px 0 20px 0;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h2.titleProyect {
+        height: 15%;
+        font-size: 26px;
+        margin: 0 0px 15px 0;
+    }
+    
+    p.descProyect {
+        height: 55%;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    a.linkProyect.active {
+        font-size: 18px;
+        color: black;
+    }
+}
+
+@media (max-width: 920px) {
+    .containerFather {
+        background: rgb(57, 169, 0);
+        width: 100%;
+        height: 225px;
+        display: flex;
+        gap: 20px;
+        border-radius: 10px;
+    }
+    
+    img.imgProyect {
+        width: 47%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerFather {
+        background: rgb(57, 169, 0);
+        width: 100%;
+        min-height: 465px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        border-radius: 10px;
+    }
+    
+    img.imgProyect {
+        width: 100%;
+        height: 60%;
+    }
+    
+    .TextProyect {
+        color: white;
+        margin: 20px 0 20px 0;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    h2.titleProyect {
+        height: 15%;
+        font-size: 20px;
+        margin: 0 0px 10px 0;
+    }
+    
+    p.descProyect {
+        height: 55%;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    a.linkProyect.active {
+        font-size: 16px;
+        color: black;
+    }
+}
